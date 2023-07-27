@@ -1,0 +1,131 @@
+<!-- Javasrcipt DOM  -->
+<!-- 
+
+When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+    JavaScript can change all the HTML elements in the page
+    JavaScript can change all the HTML attributes in the page
+    JavaScript can change all the CSS styles in the page
+    JavaScript can remove existing HTML elements and attributes
+    JavaScript can add new HTML elements and attributes
+    JavaScript can react to all existing HTML events in the page
+    JavaScript can create new HTML events in the page
+
+
+What You Will Learn
+
+    How to change the content of HTML elements
+    How to change the style (CSS) of HTML elements
+    How to react to HTML DOM events
+    How to add and delete HTML elements
+
+There are three types of Node in Javasrcipt is 
+1)text Node
+2)Element Node
+3)Attribute Node
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javasrcipt Dom Manipulation</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Welcome to The Dom Manipulation of Javasrcipt</h1>
+
+    <div class="heading">
+      <h2>This is a Heading Number 1</h2>
+      <h2>This is a Heading Number 2</h2>
+      <h2>This is a Heading Number 3</h2>
+      <h2>This is a Heading Number 4</h2>
+      <h2>This is a Heading Number 5</h2>
+      <h2>This is a Heading Number 6</h2>
+    </div>
+    <div id="para">
+      <p>This is paragraph Number 1</p>
+      <p>This is paragraph Number 2</p>
+      <p>This is paragraph Number 3</p>
+      <p>This is paragraph Number 4</p>
+      <p>This is paragraph Number 5</p>
+      <p>This is paragraph Number 6</p>
+    </div>
+
+    <h2>This is a Unordered List</h2>
+    <ul>
+        <li>This is a list item number 1</li>
+        <li>This is a list item number 2</li>
+        <li>This is a list item number 3</li>
+        <li>This is a list item number 4</li>
+        <li>This is a list item number 5</li>
+        <li>This is a list item number 6</li>
+    </ul>
+
+    <h2>This is Ordered List</h2>
+    <ol>
+        <li>This is ordered list item number 1</li>
+        <li>This is ordered list item number 2</li>
+        <li>This is ordered list item number 3</li>
+        <li>This is ordered list item number 4</li>
+        <li>This is ordered list item number 5</li>
+        <li>This is ordered list item number 6</li>
+    </ol>
+
+    <script>
+        // From Here We are going to start of DOM Manipulation and Javasrcipt
+        // document.body.style.background = "red";
+
+        let count = document.body.childElementCount;
+        console.log("The body of this HTML have ",count," Childnodes");
+
+        // Changing style by Javasrcipt
+        let heading = document.getElementsByClassName("heading")[0];
+        heading.style.background = "red";
+
+
+
+        let para = document.getElementById("para");
+        para.style.background = "blue";
+        console.log(para);
+        console.log("The paragraph div have ",para.childElementCount," Element Count");
+        console.log("The Next Element Sibling of para div is : ",para.nextElementSibling);
+        console.log("The Next Sibling of Para div is : ",para.nextSibling);
+        console.log("The Parent Element of para div is : ",para.parentElement);
+        console.log("The parent Node of para div is : ",para.parentNode);
+        console.log("The previous Element Sibling of para div is : ",para.previousElementSibling);
+
+
+
+        let Unordered = document.getElementsByTagName("ul")[0];
+        Unordered.style.background = "cyan";
+        console.log(Unordered)
+        // Check for child Nodes
+        console.log("Is there is any childNodes of Unodered list ?? ",Unordered.hasChildNodes())
+        console.log("The childNodes of Unordered list is : ",Unordered.childNodes)
+        console.log("The first child of Unordered list is : ",Unordered.firstChild)
+        console.log("The first Element Child of Unordered list is : ",Unordered.firstElementChild)
+        console.log("The last child of Unordered list is : ",Unordered.lastChild)
+        console.log("The last Element Child of Unordered list is : ",Unordered.lastElementChild)
+        console.log("The next Sibling of Unordered list is : ",Unordered.nextSibling)
+        console.log("The next Element Sibling of Unordered list is : ",Unordered.nextElementSibling)
+        
+
+
+
+        let ordered = document.getElementsByTagName("ol")[0];
+        ordered.style.background = "green";
+        
+
+        
+    </script>
+  </body>
+</html>
