@@ -21,15 +21,10 @@ To get started with the JavaScript Core Concepts Code Repository, follow these s
 
 1. Clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/javascript-core-concepts.git
+   git clone git@github.com:SinghLokesh02/Javasrcipt.git
    ```
 
-2. Navigate to the repository directory:
-   ```
-   cd javascript-core-concepts
-   ```
-
-3. Explore the code files to learn and experiment with core JavaScript concepts.
+2. Explore the code files to learn and experiment with core JavaScript concepts.
 
 ## Core Concepts Covered
 
