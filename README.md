@@ -2,7 +2,7 @@
 
 Welcome to the **JavaScript Core Concepts Code Repository**! This repository serves as your comprehensive guide to learning and mastering the fundamental concepts of JavaScript, the versatile and widely used programming language for building dynamic and interactive web applications.
 
-![JavaScript Logo](https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png)
+<img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" alt="JavaScript Logo" width="200">
 
 ## Table of Contents
 
