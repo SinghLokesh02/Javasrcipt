@@ -6,8 +6,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javasrcipt Event Handling and adding Event Listeners</title>
+    <style>
+      .box{
+        height: 200px;
+        background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box1{
+        height: 10vh;
+        width: 10vh;
+        background-color: yellow;
+      }
+      .box2{
+        height: 10vh;
+        width: 10vh;
+        background-color: green;
+      }
+      .box3{
+        height: 10vh;
+        width: 10vh;
+        background-color: purple;
+        
+      }
+      .box4{
+        height: 10vh;
+        width: 10vh;
+        background-color: orange;
+      }
+      input{
+        height: 20px;
+        width: 50%;
+        margin: 3vh auto;
+        border: 3px solid black;
+
+      }
+    </style>
   </head>
   <body>
-    
+    <div class="box">
+      <!-- Event Handlers
+
+      <div class="box1" onclick="hello()"></div>
+      <div class="box2" onmousemove="move()"></div>
+      <div class="box3" onmouseenter="enter()"></div>
+      <div class="box4" onmouseleave="leave()"></div>
+      <input type="text" onkeypress="press()"> -->
+
+
+
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+
+    <input type="text">
+
+    <script>
+      //  /Event Handlers
+      // function hello(){
+      //   console.log("Box1 Clicked")
+      // }
+      // function move(){
+      //   console.log("Mouse is Moving in Box-2")
+      // }
+      // function enter(){
+
+      //   console.log("Mouse Entered in Box-3")
+      // }
+      // function leave(){
+      //   console.log("Mouse leaved from box-4")
+      // }
+      // function press(){
+      //   console.log("Key is pressed in the input tag")
+      // }
+
+
+      // EventListners
+
+      let input = document.getElementsByTagName("input")[0];
+      input.addEventListener("keydown",(e)=>{
+        console.log("The key pressed is : ",e.key)
+      })
+
+      let box1 = document.getElementsByClassName("box1")[0];
+      // console.dir(box1);
+      // Making a array of colors
+      let arr =["black","yellow","pink","cyan","cyan","orange","violet","blue","green","indigo"]; 
+      let count = 0;
+      box1.addEventListener('click',()=>{
+        count++;
+        let color = count%arr.length;
+        box1.style.background = arr[color];
+      })
+
+      let box3 = document.getElementsByClassName("box3")[0];
+      // box3.style.display = "none"
+      box3.addEventListener('mouseover',()=>{
+         console.log("Mouse In ")
+      })
+      box3.addEventListener("mouseout",()=>{
+         console.log("Mouse Out ")
+      })
+    </script>
   </body>
 </html>
+

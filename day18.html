@@ -1,0 +1,63 @@
+<!-- ClassName and ClassList In javasrcipt -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassName and ClassList In Javasrcipt</title>
+  </head>
+  <style>
+    .red {
+      background-color: red;
+      color: white;
+    }
+    .yellow {
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="class1 class2" id="remove">
+      <h2>This is a div with 2 classes</h2>
+    </div>
+
+    <div class="list red">
+      <h1>This is unordered list Items</h1>
+      <ul>
+        <li>This is unordered list items</li>
+        <li>This is unordered list items</li>
+        <li>This is unordered list items</li>
+        <li>This is unordered list items</li>
+        <li>This is unordered list items</li>
+        <li>This is unordered list items</li>
+      </ul>
+    </div>
+
+    <script>
+        let get = document.getElementsByClassName("list")[0];
+        console.log(get.classList)//Prints all the class of selected item in list format
+        
+        get.classList.add("yellow")//Adds a class to the selected item
+        console.log(get.className)// Prints all the class in text format
+        
+        get.classList.remove("red");
+        console.log(get.classList)//Prints all the class of selected item in list format
+        
+        get.classList.toggle("red")//Adds a class to the selected item if already exist remove it
+
+        get.classList.toggle('yellow');// Yellow already exits so it removes it
+
+        console.log(get.classList)//Prints all the class of selected item in list format
+
+        // Check Whether the classlist contains some attribute or not
+        console.log(get.classList.contains("red"))//Returns true if classlist contains red class else false
+
+
+        //Remove by Id by js
+        // let get_id = document.getElementById("remove");
+        // remove.remove();
+ 
+    </script>
+  </body>
+</html>

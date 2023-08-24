@@ -1,0 +1,55 @@
+<!-- HTML Attributes and thier methods -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes and their methods</title>
+    <style>
+      h1 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first" class="class">
+      <h1>Heading 1</h1>
+      <p>Paragraph 1</p>
+    </div>
+  </body>
+  <script>
+
+    // Javasrcipt
+
+
+    console.log("Hello");
+    let get = document.getElementById("first");
+    console.log(get);
+    console.log(get.className);
+    // set attribute using dot notation or bracket notation both are same
+
+
+    // Check the element have following attribute or not
+    // Get Attributes
+    console.log(get.getAttribute("id"));
+    console.log(get.getAttribute("class"));
+    console.log(get.hasAttribute("id"));
+    console.log(get.hasAttribute("hidden"));
+
+    // set attribute
+    get.setAttribute("style", "background:red");
+    let get_h1 = document.getElementsByTagName("h1")[0];
+    get_h1.setAttribute("style", "font-size:x-small");
+
+
+    // remove attribute
+    get_h1.removeAttribute("style");
+
+
+    // get all attributes
+    console.log(get.attributes);
+    console.log(get.attributes[0]); // Prints the first attributes of the selected Element
+    console.log(get.attributes[0].name); // Prints the name of the first attributes of the selected Element
+    console.log(get.attributes[0].value); // Prints the value of the first attributes of the selected Element
+  </script>
+</html>

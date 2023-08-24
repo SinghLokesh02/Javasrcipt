@@ -1,0 +1,58 @@
+<!-- Insertion of HTML Using Javasrcipt -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js 17</title>
+  </head>
+  <body>
+      <p>This is opening of Div (outer)</p>
+    <div class="class">
+        <p>This is opening of Div (inner)</p>
+        <h1>Hello Guys</h1>
+
+        <p>This is closing of Div (inner)</p>
+    </div>
+    <p>This is closing of Div (outer)</p>
+    <script>
+
+        // Creation and insertion of Elements
+
+        // let div = document.createElement("div");
+        // div.className = "alert";
+        // div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+        // document.body.append(div);
+
+
+        // Append Method
+        let get_div = document.getElementsByClassName("class")[0];
+        let div = document.createElement("div");
+        div.innerHTML= "<h3>This is h1 tag inserted by js</h3>";
+        // get_div.appendChild(div);
+        // get_div.append(div);
+
+
+        // Prepend Method
+        get_div.prepend(div);
+
+
+        // Before Method
+        let p = document.createElement("p")
+        p.innerHTML = '<strong>I am a para tag inserted by js</strong>'
+        get_div.before(p);
+
+        // After Method
+        let p1 = document.createElement("ul")
+        p1.innerHTML = '<li>I am a list tag inserted by js</li>'
+
+        get_div.after(p1);
+
+        get_div.replaceWith(h1,p);
+
+
+    </script>
+  </body>
+
+</html>

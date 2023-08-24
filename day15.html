@@ -1,0 +1,163 @@
+<!-- Form Validation Using Javasrcipt -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+      .center {
+        text-align: center;
+      }
+      .container {
+        width: 50%;
+        margin: 2vh auto;
+      }
+      .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 4px; /* Adjust the spacing to make messages visible */
+      }
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 1vh auto;
+        border-radius: 10px;
+        border: 1px solid #000;
+        font-size: large;
+      }
+      #btn {
+        width: 50%;
+        padding: 10px;
+        margin-left: 20%;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HTML -->
+    <h1 class="center">Javasrcipt Form Validation</h1>
+    <div class="container">
+      <form action="" name="form" onsubmit="return valid()">
+        <input type="text" placeholder="Enter Your Name" name="name" required />
+        <span id="name"></span>
+        <br />
+        <input
+          type="text"
+          placeholder="Enter Your Phone Number"
+          name="phone"
+          required
+        />
+        <span id="phone"></span>
+        <br />
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          name="email"
+          required
+        />
+        <span id="email"></span>
+        <br />
+
+        <input type="password" name="pass" placeholder="Enter Password" />
+        <span id="pass"></span>
+
+        <br />
+        <input
+          type="password"
+          name="cpass"
+          placeholder="Confirm Password"
+          required
+        />
+        <span id="cpass"></span>
+        <br />
+
+        <input type="submit" value="Submit" id="btn" />
+      </form>
+    </div>
+  </body>
+  <!-- Javasrcipt -->
+  <script>
+    function seterror(id, error) {
+      var element = document.getElementById(id);
+      console.log(element);
+      element.innerHTML = error;
+      element.style.color = "red";
+    }
+    function check_alpha(pass) {
+      for (let i = 0; i < pass.length; i++) {
+        if (
+          (pass[i] >= "a" && pass[i] <= "z") ||
+          (pass[i] >= "A" && pass[i] <= "Z")
+        ) {
+          return 1;
+        }
+      }
+      return 0;
+    }
+
+    function check_digit(pass) {
+      for (let i = 0; i < pass.length; i++) {
+        if (pass[i] >= "0" && pass[i] <= "9") {
+          return 1;
+        }
+      }
+      return 0;
+    }
+
+    function check_special_char(pass) {
+      const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+      return specialChars.test(pass);
+    }
+
+    function valid() {
+      // Validate the form
+      // use seterror function to set error inside tag and id
+      // retrun true if no error found, else return false
+
+      var name = document.forms["form"]["name"].value;
+      var email = document.forms["form"]["email"].value;
+      var phone = document.forms["form"]["phone"].value;
+      var pass = document.forms["form"]["pass"].value;
+      var cpass = document.forms["form"]["cpass"].value;
+
+      if (name.length <= 5) {
+        seterror("name", "*Length of name is too short");
+        return false;
+      } else if (phone.length != 10) {
+        seterror("phone", "*Length of phone number should be 10");
+        return false;
+      } else if (email.indexOf("@") <= 0) {
+        seterror("email", "*Invalid Email");
+        return false;
+      } else if (pass.length < 8 || pass.length > 20) {
+        seterror("pass", "*Password length should be between 8 to 20");
+        return false;
+      } else if (check_alpha(pass) == 0) {
+        seterror("pass", "*Password should contain atleast one alphabet");
+        return false;
+      } else if (check_digit(pass) == 0) {
+        seterror("pass", "*Password should contain atleast one digit");
+        return false;
+      } else if (check_special_char(pass) == 0) {
+        seterror(
+          "pass",
+          "*Password should contain atleast one special character"
+        );
+        return false;
+      } else if (pass != cpass) {
+        seterror("cpass", "*Password and Confirm Password should be same");
+        return false;
+      } else {
+        return true;
+      }
+      return true;
+    }
+  </script>
+</html>

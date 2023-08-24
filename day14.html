@@ -1,0 +1,42 @@
+<!-- Getting HTML FORM Values in Javasrcipt -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting HTML Form Value in Javasrcipt</title>
+  </head>
+  <body>
+    <!-- Form with defined Event handlers -->
+    <form action="" onsubmit="GetValue()">
+      Enter Your Name : <input type="text" id="name" /> <br /><br />
+      Enter Your Email : <input type="email" name="" id="email" /> <br /><br />
+      Enter Your Password : <input type="password" name="" id="pass" /><br /><br />
+      Choose Your City :
+      <select name="" id="city">
+        <option value="Jaipur">Jaipur</option>
+        <option value="Udaipur">Udaipur</option>
+        <option value="Jodhpur">Jodhpur</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Javasrcipt -->
+    <script>
+      function GetValue() {
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let password = document.getElementById("pass");
+        let city = document.getElementById("city");
+
+        
+        document.write("Your name is : ", name.value, "<br>");
+        document.write("Your Email is : ", email.value, "<br>");
+        document.write("Your Password is : ", password.value, "<br>");
+        document.write("Your City is : ", city.value, "<br>");
+      }
+    </script>
+  </body>
+</html>
