@@ -25,6 +25,16 @@ AJAX stands for Asynchronous JavaScript And XML.
         font-size: larger;
         font-weight: bold;
       }
+      img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+      span{
+        font-size: large;
+        font-weight: bolder;
+        font-style: italic;
+      }
     </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -35,6 +45,7 @@ AJAX stands for Asynchronous JavaScript And XML.
   </head>
   <body>
     <div class="c mx-5">
+        <h1 class="text-center my-5">AJAX</h1>
       <p>
         1. An event occurs in a web page (the page is loaded, a button is
         clicked)
@@ -56,9 +67,9 @@ AJAX stands for Asynchronous JavaScript And XML.
     </div>
 
     <div class="container my-5">
-      <span><h3>name :</h3></span> <span> <h3 id="name"></h3></span>
+      <span>name :</span> <span id="name">  </span>
       <div class="photo">
-        Profile picture : <br />
+        <h3>Profile picture :</h3> 
         <img src="" alt="" />
       </div>
     </div>
