@@ -1,0 +1,12 @@
+
+{
+    "name":"Lokesh Singh",
+    "roll":25,
+    "isTrainer":true,
+    "license":null,
+    "family-member":["Father","mother","sister","sister","brother","brother"],
+    "myObj" :{
+        "name": "Sonali",
+        "friend":"Lokesh"
+    }
+}
