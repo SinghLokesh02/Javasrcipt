@@ -1,0 +1,64 @@
+<!-- Async Await function in Js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await In javasrcipt</title>
+  </head>
+  <body>
+    <h1>Async await in Javasrcipt</h1>
+
+    <!-- A function can be made async by using async keyword like this
+    asyn function get(){
+        return 7;
+    }
+
+    hum kisi bhi function ko async bana skte hai aur uske andar promise ko await kr skte hai
+
+    alag alag async function simulataneously execute hote hai like there is async function "lokesh" in our code if we have another async function "mukesh" then lokesh and mukesh executes simultaneously
+    -->
+
+    <script>
+    
+      async function lokesh() {
+
+        let delhiWeather = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("27 Deg");
+          }, 1000);
+        });
+
+        let bangloreWeather = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("25 Deg");
+          },7000);
+        });
+
+        // delhiWeather.then(alert);
+        // bangloreWeather.then(alert);
+        console.log("Fetching delhi weather please wait")
+        let delhi = await delhiWeather;
+        console.log("Fecthed Delhi weather "+ delhi);
+        console.log("Fetching Banglore weather please wait")
+        let banglore = await bangloreWeather;
+
+        console.log("Fecthed Banglore weather "+ banglore);
+
+        return [delhi,banglore];
+
+      } // if we remove asyn from a function then that will show error
+      console.log("Welcome to weather Department");
+     let a = lokesh()
+      a.then((value)=>{
+        console.log(value);
+      })
+    
+
+
+
+
+
+    </script>
+  </body>
+</html>
