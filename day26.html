@@ -1,0 +1,35 @@
+<!-- Error Object and custom Error -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Error</title>
+</head>
+<body>
+    <h1>Error Object and custom Error</h1>
+
+    <script>
+        // console.log(lokesh); This will show an error
+
+        let age = prompt('Enter Your age')
+        age = parseInt(age)
+        if(age<18){
+            throw new Error("Invalid Age")
+        }
+        else if(age>120){
+            throw new Error("Probably this is Not true Age")
+        }
+
+        // try {
+        //   console.log(lokesh)
+        //   throw new ReferenceError("This is not a proper Syntax")
+        // } catch (error) {
+        //     console.log(error.name);
+        //     console.log(error.message);
+        //     console.log(error.stack);
+
+        // }
+    </script>
+</body>
+</html>
