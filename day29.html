@@ -1,0 +1,41 @@
+<!-- Chaining of Promises -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaining Of Promises</title>
+  </head>
+  <body>
+    <h1>Chaining of Promises</h1>
+
+    <!-- Javasrcipt -->
+    <script>
+      let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Resolve after 2 sec");
+          resolve(26);
+        }, 2000);
+      });
+
+      p1.then((value) => {
+        console.log(value);
+
+        let p2 = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("promise 2");
+          }, 2000);
+        });
+        return p2;
+      }).then((value) => {
+        console.log("We are Done");
+        console.log(value);
+        return 2;
+      }).then((value)=>{
+          console.log("Done sir with resolve value of : ",value);
+         
+      })
+    </script>
+  </body>
+</html>
