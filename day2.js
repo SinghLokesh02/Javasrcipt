@@ -35,3 +35,45 @@ console.log("The sum of two Numbers is : ",num3+num2)
 
 
 
+// The const Keyword is fixed which cannot be Redeclared or Reassigned
+const pi = 3.14
+// pi = 3.15
+
+// The var Keyword is not fixed which can be Redeclared or Reassigned
+var name = "Rahul"
+var name = "Rahul Kumar"
+console.log(name)
+
+// The let Keyword is not fixed which can be Redeclared but not Reassigned
+let name1 = "Rahul"
+// let name1 = "Rahul Kumar" // This will give an error
+
+// The var keyword is function scoped/Global scoped
+// The let keyword is block scoped
+// The const keyword is block scoped
+
+// var
+function greet() {
+  if (true) {
+    var naam = "Rahul";
+  }
+  console.log(naam);
+}
+
+greet();
+
+
+// let
+
+function greet() {
+    if(true){
+        let naam1 = "Rahul"
+    }
+    console.log(naam1)
+}
+
+
+
+
+
+
