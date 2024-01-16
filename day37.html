@@ -1,0 +1,79 @@
+<!-- Async await, Promises, Callbacks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Intermediate Topics</title>
+</head>
+<body>
+    
+
+    <script>
+        let datas = [
+        {name:"Lokesh Singh",Profession:"IT Trainer"},
+        {name:"Diwakar Singh",Profession:"Flutter Developer"},
+        {name:"Aniket Shivahre",Profession:"Intern"},
+        {name:"Ritik Srivastav",Profession:"Developer"},
+        {name:"Sonali Kumari",Profession:"Intern"}
+        ];
+
+        function getDatas(){
+           setTimeout(() => {
+            let output = "";
+             datas.forEach((data,index)=>{
+                output += `<li>${data.name}</li>`;
+             })
+             document.body.innerHTML = output;
+           }, 1000);
+        }
+        
+        // Callback
+
+        // function CreateData(data,callback){
+        //     setTimeout(() => {
+        //         datas.push(data)
+        //         callback()
+        //     }, 2000);
+        // }
+        // CreateData({name:"Akshay Pathak",Profession:"Lieutinant"},getDatas)
+
+
+
+
+        // Promises
+        function CreateData(data){
+            return new Promise((resolve,reject)=>{
+                let error = false;
+                setTimeout(() => {
+                datas.push(data)
+                if(error){
+                    reject("Some Error Occured")
+                }
+                else{
+                    resolve()
+                }
+            }, 2000);
+            })
+        }
+
+
+        // CreateData({name:"Akshay Pathak",Profession:"Lieutinant"}).then(()=>{
+        //     getDatas();
+        // }).catch((error)=>{
+        //     document.write(error)
+        // })
+
+
+        // Async Await
+
+        async function run(){
+           await CreateData({name:"Akshay Pathak",Profession:"Lieutinant"});
+           getDatas();
+        }
+
+        // Calling of Async Function
+        run()
+    </script>
+</body>
+</html>
