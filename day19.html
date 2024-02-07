@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Js Objects</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <!-- 
+        Javascript Objects -> It is a collection of properties and methods
+        Properties -> It is a value associated with a object
+
+        1. Object Literals
+        2. Constructor
+        3. Object Oriented Programming
+
+        JavaScript variables can also contain many values.
+
+        Objects are variables too. But objects can contain many values.
+
+        Object values are written as name : value pairs (name and value separated by a colon).
+
+
+     -->
 
     <script>
-        // Object Literals
-        const Jsuser = {
-        name :"Lokesh Singh",
-        Address:"TCP Tekanpur Gwalior",
-        Phone : 7985218361,
-        email:"lokeshsingh7695@gmail.com",
-        working_days:["Monday","Tuesday","wednesday","Thursday","Friday","Saturday"],
-        greet :  greeting = ()=>{
-            console.log("I am function in Js object")
-        }
-        }
+      // Object Literals
+      const Jsuser = {
+        name: "Lokesh Singh",
+        Address: "TCP Tekanpur Gwalior",
+        Phone: 7985218361,
+        email: "lokeshsingh7695@gmail.com",
+        working_days: [
+          "Monday",
+          "Tuesday",
+          "wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        greet: (greeting = () => {
+          console.log("I am function in Js object");
+        }),
+        "course name": "Javascript",
+      };
 
-        // Accesing the obj
+      // Accesing the obj
 
-        // Method -1
-        console.log(Jsuser.name)
+      // Method -1
+      console.log(Jsuser.name);
 
-        // Method-2
-        console.log(Jsuser["name"])
+      // Method-2 (If the Property have space in between)
+      console.log(Jsuser["course name"]);
 
-        console.log("The working days of ",Jsuser.name,"are : ",Jsuser.working_days)
+      console.log(
+        "The working days of ",
+        Jsuser.name,
+        "are : ",
+        Jsuser.working_days
+      );
 
-        // Change value of obj
-        console.log(Jsuser.name)
-        Jsuser.name = "Lokesh"
-        console.log(Jsuser.name)
+      // Change value of obj
+      console.log(Jsuser.name);
+      Jsuser.name = "Lokesh";
+      console.log(Jsuser.name);
 
-        console.log(Jsuser.greet)
+      console.log(Jsuser.greet);
 
-        console.log(Jsuser.greet())
+      console.log(Jsuser.greet());
     </script>
-</body>
+  </body>
 </html>
