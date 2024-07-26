@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Date and Time</title>
+</head>
+<body>
+    <center>
+        <h1>Js Date and time</h1>
+    </center>
+
+    <script>
+        // Get current date and time
+        let month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var currentDate = new Date();
+        var currentTime = currentDate.toLocaleTimeString();
+        document.write("Current Time: " + currentTime);
+
+        var currentdate = currentDate.getDate();
+        var currentMonth = currentDate.getMonth() + 1;
+        var currentYear = currentDate.getFullYear();
+
+        document.write("<br>Current Date: " + currentdate + "/" + currentMonth + "/" + currentYear + "<br>");
+
+        document.write("Month is : "+month[currentMonth-1])
+    
+        setInterval(() => {
+            window.location.reload();
+        }, 1000);
+
+    </script>
+</body>
+</html>
