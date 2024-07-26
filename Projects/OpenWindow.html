@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Window</title>
+    <style>
+        div {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 70vh;
+            gap: 20px;
+        }
+         
+        input[value="Open Window"] {
+            background-color: blue;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        input[value="Open Youtube Link"] {
+            background-color: rgb(0, 255, 26);
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <input type="button" value="Open Window" onclick="window.open('PrintWindow.html')">
+    <input type="button" value="Open Youtube Link" onclick="window.open('https://www.youtube.com/watch?v=5wbyrwi8n8M')">
+   </div>
+</body>
+</html>
