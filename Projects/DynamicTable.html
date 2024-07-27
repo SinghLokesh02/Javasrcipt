@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+        tr,td,th{
+            border: 2px solid lime;
+            padding: 5px;
+        }
+        input{
+            width: 90%;
+        }
+        th{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;"><center>Dynamic Table Using Javascript</center></h1>
+    <table>
+        <thead>
+            <th>Sn No</th>
+            <th>Student Name</th>
+            <th>Date of Birth</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </thead>
+        <script>
+            
+            for(let i = 1;i<=20;i++){
+                document.write(`<tr> 
+                    <td>${i}</td> 
+                    <td><input type='text'></td> 
+                    <td><input type='date'></td> 
+                    <td><input type='number'></td> 
+                    <td><input type='email'></td>  
+                    </tr>`)
+            }
+
+        </script>
+    </table>
+</body>
+</html>
