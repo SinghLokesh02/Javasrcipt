@@ -1,0 +1,48 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Simple Interest Calculator</title>
+		<script>	
+		function calculate()
+		{
+			var amt,rate,time,si;
+			amt=parseFloat(document.frm1.t1.value);
+			rate=parseFloat(document.frm1.t2.value);
+			time=parseFloat(document.frm1.t3.value);		
+			si=(amt*rate*time)/100;			
+			document.frm1.t4.value=si;			
+		}
+		</script>
+	</head>
+	<body>
+		<h1 align="center">Mark-sheet Calculator using JavaScript</h1>
+		<form name="frm1">
+			<table border="1" cellpadding="5px" cellspacing="0" width="60%" align="center">
+				<tr>
+					<td>Amount</td>
+					<td><input type="number" min="0" name="t1"/></td>							
+				</tr>	
+				<tr>
+					<td>Rate</td>
+					<td><input type="number" min="0" name="t2"/> </td>							
+				</tr>
+				<tr>
+					<td>Time</td>
+					<td><input type="number" min="0" name="t3"/></td>							
+				</tr>
+				<tr>
+					<td>Simple Interest</td>
+					<td><input type="number" min="0" name="t4"/> </td>							
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td><input type="button" value="Calculate" onclick="calculate()"/></td>							
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
