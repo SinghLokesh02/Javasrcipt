@@ -1,6 +1,6 @@
 # JavaScript Core Concepts Code Repository
 <p align="center">
-  <img src="https://source.unsplash.com/random/?coding,web-development" alt="C Logo" width="400" height="400">
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Javascript GIF" width="400" height="400">
 </p>
 Welcome to the **JavaScript Core Concepts Code Repository**! This repository serves as your comprehensive guide to learning and mastering the fundamental concepts of JavaScript, the versatile and widely used programming language for building dynamic and interactive web applications.
 
