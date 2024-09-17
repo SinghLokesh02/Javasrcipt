@@ -1,0 +1,75 @@
+Questions Links
+
+First Set of Questions
+1. https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/
+2. https://leetcode.com/problems/find-indices-of-stable-mountains/
+3. https://leetcode.com/problems/convert-date-to-binary/
+4. https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/
+5. https://leetcode.com/problems/find-the-key-of-the-numbers/
+6. https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+7. https://leetcode.com/problems/sqrtx/
+8. https://leetcode.com/problems/valid-palindrome/
+9. https://leetcode.com/problems/single-number/
+10. https://leetcode.com/problems/majority-element/
+
+
+Second Set of Questions
+
+1. https://leetcode.com/problems/contains-duplicate/
+2. https://leetcode.com/problems/valid-anagram/
+3. https://leetcode.com/problems/intersection-of-two-arrays/
+4. https://leetcode.com/problems/intersection-of-two-arrays-ii/
+5. https://leetcode.com/problems/plus-one/
+6. https://leetcode.com/problems/move-zeroes/
+7. https://leetcode.com/problems/power-of-two/
+8. https://leetcode.com/problems/missing-number/
+9. https://leetcode.com/problems/maximum-subarray/
+10. https://leetcode.com/problems/rotate-array/
+11. https://leetcode.com/problems/maximum-69-number/
+12. https://leetcode.com/problems/check-if-n-and-its-double-exist/
+
+
+Third Set of Questions
+
+1. https://leetcode.com/problems/power-of-two/
+2. https://leetcode.com/problems/counting-bits/
+3. https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
+4. https://leetcode.com/problems/reverse-string/
+5. https://leetcode.com/problems/reverse-vowels-of-a-string/
+6. https://leetcode.com/problems/valid-perfect-square/
+7. https://leetcode.com/problems/first-unique-character-in-a-string/
+8. https://leetcode.com/problems/third-maximum-number/
+9. https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+10. https://leetcode.com/problems/perfect-number/
+11. https://leetcode.com/problems/lucky-numbers-in-a-matrix/
+12. https://leetcode.com/problems/string-matching-in-an-array/
+
+
+Fourth Set of Questions
+
+1. https://leetcode.com/problems/fibonacci-number/
+2. https://leetcode.com/problems/reverse-string-ii/
+3. https://leetcode.com/problems/to-lower-case/
+4. https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+5. https://leetcode.com/problems/largest-number-at-least-twice-of-others/
+6. https://leetcode.com/problems/most-common-word/
+7. https://leetcode.com/problems/power-of-four/
+8. https://leetcode.com/problems/backspace-string-compare/
+9. https://leetcode.com/problems/uncommon-words-from-two-sentences/
+10. https://leetcode.com/problems/monotonic-array/
+11. https://leetcode.com/problems/find-lucky-integer-in-an-array/
+12. https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/
+
+
+Fifth Set of Questions
+
+1. https://leetcode.com/problems/last-stone-weight/
+2. https://leetcode.com/problems/find-common-characters/
+3. https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+4. https://leetcode.com/problems/long-pressed-name/
+5. https://leetcode.com/problems/reverse-only-letters/
+6. https://leetcode.com/problems/duplicate-zeros/
+7. https://leetcode.com/problems/minimum-absolute-difference/
+8. https://leetcode.com/problems/unique-number-of-occurrences/
+9. https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
+10. https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
