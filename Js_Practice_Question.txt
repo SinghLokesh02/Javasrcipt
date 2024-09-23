@@ -27,3 +27,30 @@ Output: [80, 160, 240]
 5. Problem: Given an array of email addresses, return an array containing only the domains.
 const emails = ['user1@gmail.com', 'user2@yahoo.com', 'user3@hotmail.com'];
 Output: ['gmail.com', 'yahoo.com', 'hotmail.com']
+
+
+
+⭐⭐⭐ Some and Every method Question in JS ⭐⭐⭐
+
+1. Checking if any number is even
+
+2. Checking if all elements in an array are strings
+
+3. Write a function that checks if any passwords in an array are shorter than 8 characters using some().
+
+4. Given an array of numbers, use the some() method to check if at least one number is divisible by both 3 and 5.
+
+5. Write a function that takes an array of ages and checks if there are any minors (age < 18) using some().
+
+6. Use the some() method to check if any item in a shopping cart array has a quantity of 0.
+const cart = [{item: "apple", quantity: 3}, {item: "banana", quantity: 0}];
+
+7. Write a function to check if an array contains any null or undefined values using some().
+
+8. Given an array of student objects, use the find() method to locate the student with a specific name.
+const students = [{name: "John", grade: 85}, {name: "Jane", grade: 92}];
+
+9. Given an array of objects representing employees, use the find() method to locate the first employee who has a salary greater than $50,000.
+const employees = [{name: "Alice", salary: 40000}, {name: "Bob", salary: 55000}];
+
+10. Use the find() method to locate the first prime number in an array of numbers.
