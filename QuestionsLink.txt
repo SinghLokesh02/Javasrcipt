@@ -73,3 +73,27 @@ Fifth Set of Questions
 8. https://leetcode.com/problems/unique-number-of-occurrences/
 9. https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/
 10. https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+
+
+
+
+** Sixth Set of Questions 
+
+1. https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/submissions/
+2. https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/
+3. https://leetcode.com/problems/robot-return-to-origin/
+4. https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
+5. https://leetcode.com/problems/masking-personal-information/
+6. https://leetcode.com/problems/length-of-the-longest-alphabetical-continuous-substring/
+7. https://leetcode.com/problems/repeated-string-match/
+8. https://leetcode.com/problems/smallest-even-multiple/
+9. https://leetcode.com/problems/sort-the-people/
+10. https://leetcode.com/problems/number-of-common-factors/
+11. https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/
+12. https://leetcode.com/problems/reverse-only-letters/
+
+
+** Seventh Set of Questions
+1. https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/
+2. https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/
+3. https://leetcode.com/problems/special-array-i/
