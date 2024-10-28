@@ -21,3 +21,18 @@ fetch(URL + userName)
     console.log(error);
   })
   .finally(() => {});
+
+
+
+/*
+API LINK
+1. GitHub -> https://api.github.com/users/
+
+2. Random Joke -> https://official-joke-api.appspot.com/random_joke
+
+3. Hindi Random Joke Api -> "https://hindi-jokes-api.onrender.com/jokes?api_key=55a0f8dd6ea42a06fd49e909c6f3"
+
+4. Random User Api ->https://jsonplaceholder.typicode.com/users
+
+5. Single Data Api -> https://jsonplaceholder.typicode.com/todos/1
+*/
