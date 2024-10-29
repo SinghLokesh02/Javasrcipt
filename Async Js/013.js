@@ -20,7 +20,9 @@ fetch(URL + userName)
   .catch((error) => {
     console.log(error);
   })
-  .finally(() => {});
+  .finally(() => {
+    console.log("This is Finally block - which will be always executed")
+  });
 
 
 
