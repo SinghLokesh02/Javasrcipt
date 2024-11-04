@@ -1,0 +1,79 @@
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Marksheet Calculator</title>
+		<script defer>	
+		function calculate()
+		{
+            var hindi,english,maths,science,sst,percentage,total;
+            hindi=parseFloat(document.frm1.t1.value);
+            english=parseFloat(document.frm1.t2.value);
+            maths=parseFloat(document.frm1.t3.value);		
+            science=parseFloat(document.frm1.t4.value);		
+            sst=parseFloat(document.frm1.t5.value);		
+			total =(hindi+english+maths+science+sst);		
+            percentage = (hindi+english+maths+science+sst)/5 ;			
+			document.frm1.tmarks.value= total;			
+			document.frm1.percentage.value= percentage;		
+            let result = document.getElementById("result");
+            result.style.color = "white";
+            result.style.textAlign = "center";
+            if(percentage >= 40){
+                result.innerText = "Pass";
+                result.style.background = "lime";
+            }
+            else{
+                result.innerText = "Fail";
+                result.style.background = "red";
+            }	
+		}
+		</script>
+	</head>
+	<body>
+		<h1 align="center">Mark-sheet Calculator using JavaScript</h1>
+		<form name="frm1">
+			<table border="1" cellpadding="5px" cellspacing="0" width="60%" align="center">
+				<tr>
+					<td>Hindi Marks</td>
+					<td><input type="number" min="0" name="t1"/></td>							
+				</tr>	
+				<tr>
+					<td>English Marks</td>
+					<td><input type="number" min="0" name="t2"/> </td>							
+				</tr>
+				<tr>
+					<td>Math Marks</td>
+					<td><input type="number" min="0" name="t3"/></td>							
+				</tr>
+				<tr>
+					<td>Science Marks</td>
+					<td><input type="number" min="0" name="t4"/></td>							
+				</tr>
+				<tr>
+					<td>Social Science Marks</td>
+					<td><input type="number" min="0" name="t5"/></td>							
+				</tr>
+				<tr>
+					<td>Total Marks</td>
+					<td><input type="number" min="0" name="tmarks" readonly/> </td>							
+				</tr>
+				<tr>
+					<td>Percentage</td>
+					<td><input type="number" min="0" name="percentage" readonly/> </td>							
+				</tr>
+				<tr>
+					<td>Result</td>
+					<td id="result"></td>							
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td><input type="button" value="Calculate" onclick="calculate()"/></td>							
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
