@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsEqualNode Js</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blue;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <h1>Javasrcipt isEqualNode Method</h1>
+
+    <ul id="list-1">
+        <li id="list-item-1" class="one">list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>
+    <ul id="list-2">
+        <li id="list-item-1" class="one">list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>
+    <script>
+        console.log("Hello");
+        var first = document.getElementById("list-1").firstElementChild;
+        var second = document.getElementById("list-2").firstElementChild;
+        var equal = first.isEqualNode(second);
+        console.log(equal);
+    </script>
+</body>
+</html>
