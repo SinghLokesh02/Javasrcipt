@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures in Javasrcipt</title>
+</head>
+<body>
+    <!-- A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. -->
+
+
+    <!-- Example - 1 -->
+
+
+
+    <script>
+        let a = "Starting Null";
+        function run(){
+            let a = 89;
+            console.log(a);
+
+            return {
+                first:(a,b,c)=>{
+                console.log("The Sum of three Number is : ",a+b+c);
+            },
+                second:(a,b)=>{
+                console.log("The Sum of three Number is : ",a+b);
+            }
+            }
+        }
+
+        store = run();
+        store.first(1,2,3);
+        store.second(1,2);
+        
+        
+        store1 = run()
+        store1.first(11,21,34);
+        store1.second(100,20);
+
+
+        // Example - 2
+
+        function check(){
+            let a = 89;
+            console.log(a);
+            {
+                let a = "Hello"
+                console.log(a);
+            }
+             function returnFunc(){
+             a = "Good Evening";
+             console.log(a);
+            }
+              a = "Good Afternoon"
+             return returnFunc;
+        }
+        
+        run1 = check()
+        run1()
+        
+
+
+        // Example - 3
+
+        function Example3(){
+            let a = 89;
+           
+             function returnFunc(){
+             console.log(a);
+            }
+              a = "Good"
+             return returnFunc;
+        }
+
+        run1 = Example3()
+        run1();
+    </script>
+</body>
+</html>
